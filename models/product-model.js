@@ -12,14 +12,11 @@ const productSchema = new Schema(
       type: Number,
       required: true,
     },
-    image: {
-        type: String,
-        required: false
-      },
-   
+
+    image: String,
+
     description: String,
-    stock: Number,
-    discount: Number
+    stock: { type: Number, default: 0 },
   },
   {
     timestamps: true,
